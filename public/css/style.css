@@ -1,0 +1,120 @@
+section{
+    font-family: "Open sans";
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #060606;
+    opacity: 0.8;
+    background-image:  radial-gradient(#cf2222 1.35px, transparent 1.35px), radial-gradient(#cf2222 1.35px, #060606 1.35px);
+    background-size: 54px 54px;
+    background-position: 0 0,27px 27px;
+}
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    width: 480px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgb(117, 10, 31);
+}
+h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background: none;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid crimson;
+    outline: none;
+    margin: 1em 0;
+    border-radius: 15px;
+    transition: .1s ease-out;
+}
+.control input[type="submit"] {
+    background: crimson;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+    border-radius: 80px;
+}
+.control input:focus{
+    outline: 2px solid crimson;
+    font-size: 15px;
+}
+.control input[type="submit"]:hover{
+    opacity: 1;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color: #fff;
+    transition: opacity .3s ease;
+    font-size: 1.5em;
+}
+.link a:hover{
+    opacity: 1;
+}
+label{
+    font-size: 1.5em;
+}
+.control input[type="checkbox"] {
+    font-weight: bold;
+    line-height: 3em;
+    color: #ccc;
+    cursor: pointer;
+}
+.control input[type="checkbox"]:checked {
+    color: #0fbf12;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        margin-left: 25%;
+    }
+}
+@media (max-width: 804px) {
+    .form-container {
+        margin-left: 25%;
+    }
+}
+@media (max-width: 896px) {
+    .form-container {
+        margin-left: 25%;
+    }
+}
+@media (max-width: 768px) {
+    .form-container {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 100%;
+    }
+}
+@media (max-width: 437px) {
+    .form-container {
+        width: 400px;
+        left: 28%;
+    }
+    .section{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+}

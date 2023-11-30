@@ -1,0 +1,189 @@
+section{
+    font-family: "Open sans";
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #060606;
+    opacity: 0.8;
+    background-color:  radial-gradient(#cf2222 1.35px, transparent 1.35px), radial-gradient(#cf2222 1.35px, #060606 1.35px);
+    background-size: 54px 54px;
+    background-position: 0 0,27px 27px;
+}
+.form-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    background: transparent;
+    border: 1px solid crimson ;
+    box-shadow: 2px 2px 20px rgb(117, 10, 31);
+  }
+  
+  .form-column {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.control2 input{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    color: #fff;
+    background: none;
+    border: none;
+    border-bottom: 2px solid crimson;
+    outline: none;
+    margin: 1em 0;
+    border-radius: 15px;
+    transition: .1s ease-out;
+}
+
+.control2 input[name='name'] {
+    margin-right: 30%; 
+  }
+  
+  .control2 input[name='numeroDoc'] {
+    margin-left: 30%; 
+  }
+.control2 input[name='password'] {
+    margin-left: 10%; 
+  }
+  
+  .control2 input[name='email'] {
+    margin-right: 30%;
+  }
+  #doc {
+    margin-left: 10%; 
+  }
+  
+  .control2 select {
+    margin-top: 1em;
+  }
+.control2 input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: crimson;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+    border-radius: 80px;
+    cursor: pointer;
+}
+
+.control2 input:focus{
+    outline: 1px solid crimson;
+    font-size: 18px;
+}
+select {
+    appearance: none;
+    padding: 8px 18px;
+    margin: 25px;
+    text-align: center;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+    border: 1px solid rgb(220, 20, 60);
+    background-color: rgb(220, 20, 60);
+    color: #ffffff;
+    font-size: 16px;
+}
+ 
+select:focus {
+    outline: none;
+}
+.control2 input[type="submit"]:hover{
+    opacity: 1;
+}
+.link2{
+    text-align: center;
+}
+.link2 a{
+    text-decoration: none;
+    color: #fff;
+    transition: opacity .3s ease;
+    font-size: 1.5em;
+}
+.link a:hover{
+    opacity: 1;
+}
+label{
+    font-size: 1.5em;
+    text-align: center;
+}
+.control2 input[type="checkbox"] {
+    font-weight: bold;
+    line-height: 3em;
+    color: #ccc;
+    cursor: pointer;
+}
+.control2 input[type="checkbox"]:checked {
+    color: #0fbf12;
+}
+.mensajeE{
+    color: white;
+    font-size: 18px;
+    background-color: crimson;
+    padding: 10px;
+}
+.mensajeExito {
+    color: white;
+    font-size: 18px;
+    background-color: green;
+    padding: 10px;
+  }
+@media (max-width: 300px) {
+    .form-container2 {
+        width: 90%; /* Ajusta el ancho del contenedor */
+        left: 50%; /* Ajusta la posición horizontal */
+        transform: translateX(-50%);
+        padding: 20px 10px; /* Ajusta el relleno */
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+    h1 {
+        font-size: 2em; /* Ajusta el tamaño de fuente */
+    }
+    .control2 input,
+    .control2 select {
+        padding: 10px; /* Ajusta el relleno */
+        margin: 0.5em 0; /* Ajusta el margen */
+    }
+    .control2 input[type="submit"] {
+        font-size: 1em; /* Ajusta el tamaño de fuente */
+        padding: 8px; /* Ajusta el relleno */
+        border-radius: 15px;
+    }
+    select {
+        padding: 5px 30px; /* Ajusta el relleno y el margen */
+        font-size: 12px; /* Ajusta el tamaño de fuente */
+    }
+    .link2 a {
+        font-size: 1em; /* Ajusta el tamaño de fuente */
+    }
+    .section{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    /* Ajusta la propiedad background-size para que la imagen se extienda hacia abajo y ocupe toda la pantalla */
+}
+@media screen and (max-width:437px) {
+    .form-container2 {
+        width: 400px; 
+        left: 50%; 
+        
+    }
+}
