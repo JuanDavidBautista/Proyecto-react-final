@@ -26,7 +26,6 @@ const HomeC = ({userName}) => {
       <nav className='menu'>
         <label className='logo'>Paciente</label>
         <ul className={`menu_items ${menuOpen ? 'show' : ''}`}>
-          <li className='active'><Link to={"#"}>Inicio</Link></li>
           <li><Link to={"/verCitas"}>Ver Citas</Link></li>
           <li><button onClick={handleLogout}>Cerrar Sesion</button></li>
         </ul>
@@ -38,11 +37,11 @@ const HomeC = ({userName}) => {
       <img src="perfil.png" />
       </div>
       <div className='textW'>
-      Bienvenid@: {name || 'Invitado'}<br />
+      Bienvenido {name || 'Invitado'}<br />
       </div>
       <div className='botonC2'>
         <Link to="/registrarCitas">
-          Registre su cita aquí
+          Registrar cita
         </Link>
       </div>
     </div>

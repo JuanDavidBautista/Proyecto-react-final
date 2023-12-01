@@ -91,7 +91,7 @@ useEffect(() => {
       <nav className='menu'>
         <label className='logo'>Doctor</label>
         <ul className={`menu_items ${menuOpen ? 'show' : ''}`}>
-          <li className='active'><Link to={"#"}>Inicio</Link></li>
+          <li className='active'><Link to={"/actualizar"}>Actualizar datos</Link></li>
           <li><button onClick={handleLogout}>Cerrar Sesion</button></li>
         </ul>
         <span className={`btn_menu ${menuOpen ? 'hide' : ''}`} onClick={toggleMenu}>
@@ -102,13 +102,10 @@ useEffect(() => {
       <img src="perfil.png" />
       </div>
       <div className='textW'>
-      Bienvenid@: {name || 'Invitado'}
+      Bienvenido {name || 'Invitado'}
       </div>
       <div className='botonC'>
-        <Link to={"/citas"}>Ver Citas</Link><br></br>
-      </div>
-      <div className='botonC'>
-        <Link to={"/actualizar"}>Actualizar</Link><br></br>
+        <Link to={"/Citas"}>Ver Citas</Link><br></br>
       </div>
         </div>
   );

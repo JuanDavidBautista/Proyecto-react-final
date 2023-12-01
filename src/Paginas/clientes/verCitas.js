@@ -62,7 +62,8 @@ const VerCitas = ({userName}) => {
       nombre: cita.nombre,
       numeroDocumento: cita.numeroDocumento,
       fechaCita: cita.fechaCita,
-      horaCita: cita.horaCita
+      horaCita: cita.horaCita,
+      doctorAsignado: cita.doctorAsignado
     });
     openModal();
   };
@@ -78,7 +79,8 @@ const VerCitas = ({userName}) => {
       nombre: "",
       numeroDocumento: "",
       fechaCita: "",
-      horaCita: ""
+      horaCita: "",
+      doctorAsignado: ""
     });
   };
 
@@ -119,7 +121,6 @@ const VerCitas = ({userName}) => {
       <nav className='menu'>
         <label className='logo'>Agende Su Cita</label>
         <ul className={`menu_items ${menuOpen ? 'show' : ''}`}>
-          <li className='active'><Link to={"/homeC"}>Inicio</Link></li>
 
           <li><button onClick={handleLogout}>Cerrar Sesion</button></li>
         </ul>
@@ -144,8 +145,6 @@ const VerCitas = ({userName}) => {
               <th scope="col">Fecha de Cita</th>
               <th scope="col">Hora de Cita</th>
               <th scope="col">Doctor</th>
-              <th scope="col">Eliminar</th>
-              <th scope="col">Editar</th>
             </tr>
           </thead>
           <tbody>

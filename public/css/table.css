@@ -12,7 +12,7 @@ td{
     color: #000;
 }
 thead th{
-    background-color: crimson;
+    background-color: rgb(20, 33, 220);
 }
 tbody td{
     position: relative;
@@ -81,7 +81,7 @@ tbody td:hover:before{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgb(52, 52, 52);
+    background-color: rgb(0, 141, 223);
     padding: 40px;
   }
 .modal-content h2{
@@ -92,8 +92,7 @@ tbody td:hover:before{
     overflow: hidden;
     outline: none;
     border: none;
-    border-bottom: 3px solid crimson;
-    border-radius: 10px;
+    border-bottom: 3px solid rgb(255, 255, 255);
     padding: 2px;
     outline: none;
     text-align: center;
@@ -101,13 +100,12 @@ tbody td:hover:before{
 .modal-content button{
     font-size: 14px;
     padding: 10px;
-    border-radius: 10px;
-    background-color: crimson;
+    background-color: rgb(0, 47, 255);
     color: white;
     transition: .3s ease-in-out;
     cursor: pointer;
 }
 .modal-content button:hover{
-    background-color: #000;
+
     color: white;
 }

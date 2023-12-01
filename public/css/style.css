@@ -6,7 +6,6 @@ section{
     width: 100%;
     background-color: #060606;
     opacity: 0.8;
-    background-image:  radial-gradient(#cf2222 1.35px, transparent 1.35px), radial-gradient(#cf2222 1.35px, #060606 1.35px);
     background-size: 54px 54px;
     background-position: 0 0,27px 27px;
 }
@@ -15,11 +14,10 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: transparent;
+    background-color: rgb(65, 170, 231);
     width: 480px;
     padding: 50px 30px;
     border-radius: 10px;
-    box-shadow: 2px 2px 20px rgb(117, 10, 31);
 }
 h1{
     text-transform: uppercase;
@@ -34,23 +32,25 @@ h1{
     background: none;
     color: #fff;
     border: none;
-    border-bottom: 2px solid crimson;
     outline: none;
     margin: 1em 0;
-    border-radius: 15px;
     transition: .1s ease-out;
 }
+.control input[type="text"]{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.control input[type="password"]{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
 .control input[type="submit"] {
-    background: crimson;
+    background: rgb(0, 60, 255);
     color: #fff;
     text-transform: uppercase;
     font-size: 1.2em;
-    opacity: .7;
     transition: opacity .3s ease;
     border-radius: 80px;
 }
 .control input:focus{
-    outline: 2px solid crimson;
     font-size: 15px;
 }
 .control input[type="submit"]:hover{

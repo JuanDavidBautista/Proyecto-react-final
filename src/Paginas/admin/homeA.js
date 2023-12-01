@@ -22,8 +22,7 @@ const HomeA = () => {
       <nav className='menu'>
         <label className='logo'>Admin</label>
         <ul className={`menu_items ${menuOpen ? 'show' : ''}`}>
-          <li className='active'><Link to={"#"}>Inicio</Link></li>
-          <li><Link to={"#"}>Ver usuarios</Link></li>
+          <li className='active'><Link to={"../register"}>Registroar nuevo usuario</Link></li>
           <li><button onClick={handleLogout}>Cerrar Sesion</button></li>
         </ul>
         <span className={`btn_menu ${menuOpen ? 'hide' : ''}`} onClick={toggleMenu}>
@@ -34,10 +33,7 @@ const HomeA = () => {
       <img src="perfil.png" />
       </div>
       <div className='textW'>
-      Bienvenid@: {name || 'Invitado'}
-      </div>
-      <div className='botonC'>
-        <Link to={"#"}>Registro</Link><br></br>
+      Bienvenido {name || 'Invitado'}
       </div>
 
       </div>

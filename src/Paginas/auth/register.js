@@ -10,7 +10,7 @@ const Register = () => {
         numeroDoc: '',
         password: '',
         tipoDoc: '',
-        role: 'admin',
+        role: 'doctor',
       });
     
       const { name, email, numeroDoc, password, tipoDoc, role } = usuario;
@@ -94,6 +94,14 @@ const Register = () => {
                 <label>Contraseña</label>
                 <input type='password' name='password' id='pass' onChange={onChange} value={password} required />
                 </div>
+                <div className='control2'>
+                <select name="role" value={role} onChange={onChange}>
+                    <option value="" selected hidden>elegir rol</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="paciente">Paciente</option>
+                    <option value="admin">Administrador</option>
+                </select>
+                </div>
             </div>
 
             {/* Segundo grupo de campos */}
@@ -105,7 +113,7 @@ const Register = () => {
                     <option value="cc">cedula de ciudadania</option>
                     <option value="pp">pasaporte</option>
                 </select>
-                </div>
+            </div>
                 <div className='control2'>
                 <label>Numero De Documento</label>
                 <input type='text' name='numeroDoc' id='doc' onChange={onChange} value={numeroDoc} required />
